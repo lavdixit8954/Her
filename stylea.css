@@ -1,0 +1,154 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: #f3f3f3;
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Slider List */
+  .slider {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Individual Slides */
+  .item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .bio {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .birthday-slide .bio {
+    font-size: 18px;
+    color: #d9534f;
+  }
+  
+  .birthday-slide h1 {
+    font-size: 28px;
+    color: #ff4500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+  
+  .birthday-slide p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .birthday-img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  .proposal-buttons {
+    margin-top: 15px;
+  }
+  
+  .proposal-buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .yes-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .no-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Navigation Arrows */
+  .arrow-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .arrow-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: all;
+    transition: background-color 0.3s;
+  }
+  
+  .arrow-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .birthday-img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .bio {
+      font-size: 14px;
+    }
+  
+    .birthday-slide h1 {
+      font-size: 22px;
+    }
+  
+    .proposal-buttons button {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    .arrow-buttons button {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
